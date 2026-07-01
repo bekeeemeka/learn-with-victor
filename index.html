@@ -25,7 +25,9 @@
       </div>
     </a>
 
-    <button class="menu-toggle" id="menuToggle">☰</button>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu">
+      <i class="fa-solid fa-bars"></i>
+    </button>
 
     <nav class="nav-menu" id="navMenu">
       <a href="#home">Home</a>
@@ -36,17 +38,21 @@
       <a href="#contact">Contact</a>
     </nav>
 
-    <a class="nav-cta" href="mailto:bekeeemeka33@gmail.com">Book a Lesson</a>
+    <a class="nav-cta" href="mailto:bekeeemeka33@gmail.com">
+      Book a Lesson
+    </a>
   </div>
 </header>
 
 <main>
 
-<section id="home" class="hero section-padding">
+<section id="home" class="hero">
   <div class="container hero-grid">
     <div class="hero-content">
       <span class="eyebrow">English lessons for Polish speakers</span>
+
       <h1>Master English<br>With Confidence</h1>
+
       <p class="hero-text">
         Practical English lessons with clear Polish support, audio learning,
         speaking practice and simple explanations.
@@ -73,7 +79,8 @@
 
 <section id="about" class="section-padding">
   <div class="container center">
-    <h2>Why Choose My English Lessons?</h2>
+    <span class="section-kicker">Why Learn With Victor?</span>
+    <h2>English Lessons Made Simple</h2>
     <p class="section-subtitle">
       Simple, practical and friendly English lessons designed to help you speak with confidence.
     </p>
@@ -102,9 +109,11 @@
 
 <section class="about-victor section-padding">
   <div class="container about-grid">
-    <img src="images/victor.png" alt="Victor English Tutor">
+    <div class="about-photo-card">
+      <img src="images/victor.png" alt="Victor English Tutor">
+    </div>
 
-    <div>
+    <div class="about-copy">
       <span class="section-kicker">About Victor</span>
       <h2>Your English Tutor</h2>
       <p>
@@ -116,6 +125,12 @@
         Whether you are a beginner or you already know some English, I will help you
         build confidence step by step.
       </p>
+
+      <div class="mini-stats">
+        <div><strong>50+</strong><span>Students Taught</span></div>
+        <div><strong>100+</strong><span>Lessons Delivered</span></div>
+        <div><strong>95%</strong><span>Satisfaction</span></div>
+      </div>
     </div>
   </div>
 </section>
@@ -146,6 +161,7 @@
 
 <section id="how" class="section-padding">
   <div class="container center">
+    <span class="section-kicker">Simple Process</span>
     <h2>How It Works</h2>
     <p class="section-subtitle">Start learning in three simple steps.</p>
 
@@ -171,33 +187,33 @@
   </div>
 </section>
 
+<section id="reviews" class="section-padding reviews-section">
+  <div class="container center">
+    <span class="section-kicker">Student Feedback</span>
+    <h2>What My Students Say</h2>
+    <p class="section-subtitle">Helping students speak English with confidence.</p>
+
+    <div class="cards three">
+      <article class="review-card"><div class="stars">★★★★★</div><p>“Victor helped me improve my speaking confidence. I can now communicate much better in English.”</p><strong>– Anna</strong></article>
+      <article class="review-card"><div class="stars">★★★★★</div><p>“The lessons are practical and easy to understand.”</p><strong>– Monika</strong></article>
+      <article class="review-card"><div class="stars">★★★★★</div><p>“My English improved significantly after a few lessons.”</p><strong>– Gregory</strong></article>
+    </div>
+  </div>
+</section>
+
 <section id="faq" class="section-padding faq-section">
   <div class="container">
     <div class="center">
+      <span class="section-kicker">Questions</span>
       <h2>Frequently Asked Questions</h2>
       <p class="section-subtitle">Common questions before booking a lesson.</p>
     </div>
 
     <div class="faq-list">
-      <div class="faq-item">
-        <h3>Do I need to know English already?</h3>
-        <p>No. I teach beginners and students who already know some English.</p>
-      </div>
-
-      <div class="faq-item">
-        <h3>Are lessons online?</h3>
-        <p>Yes, lessons can be online. Physical lessons may also be possible depending on location.</p>
-      </div>
-
-      <div class="faq-item">
-        <h3>Do you explain in Polish?</h3>
-        <p>Yes. I use Polish support to make difficult English ideas easier to understand.</p>
-      </div>
-
-      <div class="faq-item">
-        <h3>How long is one lesson?</h3>
-        <p>Lessons can be 60 minutes or longer depending on the student's needs.</p>
-      </div>
+      <div class="faq-item"><h3>Do I need to know English already?</h3><p>No. I teach beginners and students who already know some English.</p></div>
+      <div class="faq-item"><h3>Are lessons online?</h3><p>Yes, lessons can be online. Physical lessons may also be possible depending on location.</p></div>
+      <div class="faq-item"><h3>Do you explain in Polish?</h3><p>Yes. I use Polish support to make difficult English ideas easier to understand.</p></div>
+      <div class="faq-item"><h3>How long is one lesson?</h3><p>Lessons can be 60 minutes or longer depending on the student's needs.</p></div>
     </div>
   </div>
 </section>
@@ -214,7 +230,7 @@
 
 </main>
 
-<a class="whatsapp-float" href="https://wa.me/48723463805" target="_blank">
+<a class="whatsapp-float" href="https://wa.me/48723463805" target="_blank" aria-label="Contact Victor on WhatsApp">
   <i class="fa-brands fa-whatsapp"></i>
 </a>
 
@@ -223,10 +239,10 @@
     <div>
       <div class="footer-brand">
         <img src="images/logo.png" alt="Learn With Victor logo">
-        <strong>LearnWithVictor</strong>
+        <strong>Learn With Victor</strong>
       </div>
       <p>Helping students build confidence in English through practical and engaging lessons.</p>
-      <small>© 2026 LearnWithVictor. All rights reserved.</small>
+      <small>© 2026 Learn With Victor. All rights reserved.</small>
     </div>
 
     <div>

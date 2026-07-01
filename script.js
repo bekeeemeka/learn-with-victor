@@ -1,28 +1,32 @@
 const menuToggle = document.querySelector("#menuToggle");
 const navMenu = document.querySelector("#navMenu");
 const audios = document.querySelectorAll("audio");
+const header = document.querySelector(".site-header");
 
-menuToggle.addEventListener("click", () => {
-  navMenu.classList.toggle("open");
-});
+if (menuToggle && navMenu) {
+  menuToggle.addEventListener("click", () => {
+    navMenu.classList.toggle("open");
+  });
 
-document.querySelectorAll(".nav-menu a").forEach(link => {
-  link.addEventListener("click", () => navMenu.classList.remove("open"));
-});
+  document.querySelectorAll(".nav-menu a").forEach(link => {
+    link.addEventListener("click", () => navMenu.classList.remove("open"));
+  });
+}
 
 audios.forEach(audio => {
   audio.addEventListener("play", () => {
     audios.forEach(otherAudio => {
-      if (otherAudio !== audio) otherAudio.pause();
+      if (otherAudio !== audio) {
+        otherAudio.pause();
+      }
     });
   });
 });
-window.addEventListener("scroll", function () {
-    const header = document.querySelector(".site-header");
 
-    if (window.scrollY > 40) {
-        header.classList.add("scrolled");
-    } else {
-        header.classList.remove("scrolled");
-    }
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 40) {
+    header.classList.add("scrolled");
+  } else {
+    header.classList.remove("scrolled");
+  }
 });
