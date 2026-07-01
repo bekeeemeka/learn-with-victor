@@ -1,23 +1,19 @@
-const navLinks = document.querySelectorAll("nav a");
+const menuToggle = document.querySelector("#menuToggle");
+const navMenu = document.querySelector("#navMenu");
+const audios = document.querySelectorAll("audio");
 
-navLinks.forEach(function (link) {
-    link.addEventListener("click", function () {
-        navLinks.forEach(function (nav) {
-            nav.classList.remove("active");
-        });
-
-        link.classList.add("active");
-    });
+menuToggle.addEventListener("click", () => {
+  navMenu.classList.toggle("open");
 });
 
-const audioPlayers = document.querySelectorAll("audio");
+document.querySelectorAll(".nav-menu a").forEach(link => {
+  link.addEventListener("click", () => navMenu.classList.remove("open"));
+});
 
-audioPlayers.forEach(function (audio) {
-    audio.addEventListener("play", function () {
-        audioPlayers.forEach(function (otherAudio) {
-            if (otherAudio !== audio) {
-                otherAudio.pause();
-            }
-        });
+audios.forEach(audio => {
+  audio.addEventListener("play", () => {
+    audios.forEach(otherAudio => {
+      if (otherAudio !== audio) otherAudio.pause();
     });
+  });
 });

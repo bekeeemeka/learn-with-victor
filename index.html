@@ -1,287 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Learn with Victor</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Learn With Victor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<header class="navbar">
-    <div class="logo-box">
-        <img src="images/logo.png" alt="Learn with Victor Logo">
-    </div>
+<header class="site-header">
+  <div class="container nav-wrapper">
+    <a class="brand" href="#home">
+      <img src="images/logo.png" alt="Learn With Victor logo">
+      <div>
+        <strong>Learn With Victor</strong>
+        <span>English Lessons in Poland</span>
+      </div>
+    </a>
 
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#lessons">Lessons</a>
-        <a href="#trial">Trial Lesson</a>
-        <a href="#about">About Me</a>
-        <a href="#contact">Contact</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+
+    <nav class="nav-menu" id="navMenu">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#lesson">Lessons</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
     </nav>
 
-    <a href="#contact" class="nav-btn">Book a Lesson</a>
+    <a class="nav-cta" href="mailto:bekeeemeka33@gmail.com">Book a Lesson</a>
+  </div>
 </header>
 
 <main>
-
-<section id="home" class="hero">
-    <div class="hero-text">
-        <h1>Learn English<br><span>with Polish Support</span></h1>
-
-        <p>
-            Practical lessons for everyday life, work and travel.
-            Audio lessons with Polish translation to help you learn faster and with confidence.
+  <section id="home" class="hero section-padding">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <span class="eyebrow">Practical English with Polish support</span>
+        <h1>Learn English<br>With Confidence</h1>
+        <p class="hero-text">
+          Practical English lessons for adults and children in Poland.
+          Improve speaking, grammar, listening and confidence naturally.
         </p>
 
-        <div class="hero-buttons">
-            <a href="#trial" class="primary-btn">▶ Start Free Trial Lesson</a>
-            <a href="#contact" class="secondary-btn">Book a Lesson</a>
-        </div>
+        <ul class="check-list">
+          <li>Personalized lessons</li>
+          <li>Online & physical classes</li>
+          <li>Friendly learning experience</li>
+        </ul>
 
-        <div class="hero-features">
-            <span>🎧 Audio Lessons</span>
-            <span>🇵🇱 Polish Translation</span>
-            <span>⏱ Learn at Your Pace</span>
+        <div class="hero-actions">
+          <a class="btn primary" href="#lesson">Book Trial Lesson</a>
+          <a class="btn secondary" href="#about">Learn More</a>
         </div>
+      </div>
+
+      <div class="hero-image-wrap">
+        <div class="decor-circle"></div>
+        <img class="hero-image" src="images/victor.png" alt="Victor English Tutor">
+      </div>
     </div>
+  </section>
 
-    <div class="hero-image">
-        <div class="circle-bg"></div>
-        <img src="images/victor.png" alt="Victor English Tutor">
-        <div class="student-badge">
-            <strong>100+</strong>
-            <small>Happy Students</small>
-        </div>
+  <section id="about" class="section-padding">
+    <div class="container center">
+      <h2>Why Choose My English Lessons?</h2>
+      <p class="section-subtitle">Simple, practical and friendly English lessons designed to help you speak with confidence.</p>
+
+      <div class="cards three">
+        <article class="info-card">
+          <div class="icon">💬</div>
+          <h3>Practical Speaking</h3>
+          <p>Learn real English for daily conversations, work, school and travel.</p>
+        </article>
+
+        <article class="info-card">
+          <div class="icon">📖</div>
+          <h3>Grammar Made Simple</h3>
+          <p>Understand grammar with easy examples, not confusing rules.</p>
+        </article>
+
+        <article class="info-card">
+          <div class="icon">👥</div>
+          <h3>Kids & Adults Lessons</h3>
+          <p>Friendly lessons for children, teenagers and adults at different levels.</p>
+        </article>
+      </div>
     </div>
-</section>
+  </section>
 
-<section id="lessons" class="features">
-    <p class="section-label">WHY CHOOSE MY LESSONS?</p>
-    <h2>Simple, Effective & Student Focused</h2>
+  <section id="lesson" class="section-padding lesson-area">
+    <div class="container center">
+      <span class="section-kicker">Free Trial Lesson</span>
+      <h2>Lesson 1: Basic Sentences</h2>
+      <p class="section-subtitle">Listen to the English audio, read the Polish translation, then listen to the Polish audio.</p>
 
-    <div class="feature-grid">
-        <div class="feature-card">
-            <div class="icon">💬</div>
-            <h3>Speaking Practice</h3>
-            <p>Practical conversations to help you speak naturally and confidently.</p>
-        </div>
-
-        <div class="feature-card">
-            <div class="icon">📖</div>
-            <h3>Polish Support</h3>
-            <p>Clear explanations in Polish so you understand everything easily.</p>
-        </div>
-
-        <div class="feature-card">
-            <div class="icon">🎧</div>
-            <h3>Audio Lessons</h3>
-            <p>Listen, repeat and improve with audio lessons anytime, anywhere.</p>
-        </div>
-
-        <div class="feature-card">
-            <div class="icon">⭐</div>
-            <h3>For All Levels</h3>
-            <p>Perfect for beginners and students who want to improve their English.</p>
-        </div>
+      <div class="lesson-grid">
+        <article class="lesson-card"><span>1</span><h3>Hello.</h3><audio controls src="audio/english/hello.mp3"></audio><p>Cześć.</p><audio controls src="audio/polish/hello.mp3"></audio></article>
+        <article class="lesson-card"><span>2</span><h3>Hi.</h3><audio controls src="audio/english/hi.mp3"></audio><p>Cześć.</p><audio controls src="audio/polish/hi.mp3"></audio></article>
+        <article class="lesson-card"><span>3</span><h3>Good morning.</h3><audio controls src="audio/english/good-morning.mp3"></audio><p>Dzień dobry.</p><audio controls src="audio/polish/good-morning.mp3"></audio></article>
+        <article class="lesson-card"><span>4</span><h3>My name is Anna.</h3><audio controls src="audio/english/my-name-is-anna.mp3"></audio><p>Nazywam się Anna.</p><audio controls src="audio/polish/my-name-is-anna.mp3"></audio></article>
+        <article class="lesson-card"><span>5</span><h3>I am Peter.</h3><audio controls src="audio/english/i-am-peter.mp3"></audio><p>Jestem Piotr.</p><audio controls src="audio/polish/i-am-peter.mp3"></audio></article>
+        <article class="lesson-card"><span>6</span><h3>Nice to meet you.</h3><audio controls src="audio/english/nice-to-meet-you.mp3"></audio><p>Miło cię poznać.</p><audio controls src="audio/polish/nice-to-meet-you.mp3"></audio></article>
+        <article class="lesson-card"><span>7</span><h3>How are you?</h3><audio controls src="audio/english/how-are-you.mp3"></audio><p>Jak się masz?</p><audio controls src="audio/polish/how-are-you.mp3"></audio></article>
+        <article class="lesson-card"><span>8</span><h3>I am fine.</h3><audio controls src="audio/english/i-am-fine.mp3"></audio><p>Mam się dobrze.</p><audio controls src="audio/polish/i-am-fine.mp3"></audio></article>
+        <article class="lesson-card"><span>9</span><h3>Thank you.</h3><audio controls src="audio/english/thank-you.mp3"></audio><p>Dziękuję.</p><audio controls src="audio/polish/thank-you.mp3"></audio></article>
+        <article class="lesson-card"><span>10</span><h3>Goodbye.</h3><audio controls src="audio/english/goodbye.mp3"></audio><p>Do widzenia.</p><audio controls src="audio/polish/goodbye.mp3"></audio></article>
+        <article class="lesson-card"><span>11</span><h3>Bye.</h3><audio controls src="audio/english/bye.mp3"></audio><p>Pa.</p><audio controls src="audio/polish/bye.mp3"></audio></article>
+      </div>
     </div>
-</section>
+  </section>
 
-<section id="trial" class="trial">
-    <p class="section-label">FREE TRIAL LESSON</p>
-    <h2>Lesson 1: Basic Sentences</h2>
+  <section id="reviews" class="section-padding">
+    <div class="container center">
+      <h2>What My Students Say</h2>
+      <p class="section-subtitle">Helping students speak English with confidence.</p>
 
-    <div class="lesson-list">
-
-        <div class="lesson-card">
-            <span class="number">1</span>
-            <div class="sentence">
-                <h3>Hello.</h3>
-                <audio controls src="audio/english/hello.mp3"></audio>
-                <p><strong>Polish:</strong> Cześć.</p>
-                <audio controls src="audio/polish/hello.mp3"></audio>
-            </div>
-        </div>
-
-        <div class="lesson-card">
-            <span class="number">2</span>
-            <div class="sentence">
-                <h3>Hi.</h3>
-                <audio controls src="audio/english/hi.mp3"></audio>
-                <p><strong>Polish:</strong> Cześć.</p>
-                <audio controls src="audio/polish/hi.mp3"></audio>
-            </div>
-        </div>
-
-        <div class="lesson-card">
-            <span class="number">3</span>
-            <div class="sentence">
-                <h3>Good morning.</h3>
-                <audio controls src="audio/english/good-morning.mp3"></audio>
-                <p><strong>Polish:</strong> Dzień dobry.</p>
-                <audio controls src="audio/polish/good-morning.mp3"></audio>
-            </div>
-        </div>
-
-        <div class="lesson-card">
-            <span class="number">4</span>
-            <div class="sentence">
-                <h3>My name is Anna.</h3>
-                <audio controls src="audio/english/my-name-is-anna.mp3"></audio>
-                <p><strong>Polish:</strong> Nazywam się Anna.</p>
-                <audio controls src="audio/polish/my-name-is-anna.mp3"></audio>
-            </div>
-        </div>
-
-        <div class="lesson-card">
-            <span class="number">5</span>
-            <div class="sentence">
-                <h3>I am Peter.</h3>
-                <audio controls src="audio/english/i-am-peter.mp3"></audio>
-                <p><strong>Polish:</strong> Jestem Piotr.</p>
-                <audio controls src="audio/polish/i-am-peter.mp3"></audio>
-            </div>
-        </div>
-
-        <div class="lesson-card">
-            <span class="number">6</span>
-            <div class="sentence">
-                <h3>Nice to meet you.</h3>
-                <audio controls src="audio/english/nice-to-meet-you.mp3"></audio>
-                <p><strong>Polish:</strong> Miło cię poznać.</p>
-                <audio controls src="audio/polish/nice-to-meet-you.mp3"></audio>
-            </div>
-        </div>
-
-        <div class="lesson-card">
-            <span class="number">7</span>
-            <div class="sentence">
-                <h3>How are you?</h3>
-                <audio controls src="audio/english/how-are-you.mp3"></audio>
-                <p><strong>Polish:</strong> Jak się masz?</p>
-                <audio controls src="audio/polish/how-are-you.mp3"></audio>
-            </div>
-        </div>
-
-        <div class="lesson-card">
-            <span class="number">8</span>
-            <div class="sentence">
-                <h3>I am fine.</h3>
-                <audio controls src="audio/english/i-am-fine.mp3"></audio>
-                <p><strong>Polish:</strong> Mam się dobrze.</p>
-                <audio controls src="audio/polish/i-am-fine.mp3"></audio>
-            </div>
-        </div>
-
-        <div class="lesson-card">
-            <span class="number">9</span>
-            <div class="sentence">
-                <h3>Thank you.</h3>
-                <audio controls src="audio/english/thank-you.mp3"></audio>
-                <p><strong>Polish:</strong> Dziękuję.</p>
-                <audio controls src="audio/polish/thank-you.mp3"></audio>
-            </div>
-        </div>
-
-        <div class="lesson-card">
-            <span class="number">10</span>
-            <div class="sentence">
-                <h3>Goodbye.</h3>
-                <audio controls src="audio/english/goodbye.mp3"></audio>
-                <p><strong>Polish:</strong> Do widzenia.</p>
-                <audio controls src="audio/polish/goodbye.mp3"></audio>
-            </div>
-        </div>
-
-        <div class="lesson-card">
-            <span class="number">11</span>
-            <div class="sentence">
-                <h3>Bye.</h3>
-                <audio controls src="audio/english/bye.mp3"></audio>
-                <p><strong>Polish:</strong> Pa.</p>
-                <audio controls src="audio/polish/bye.mp3"></audio>
-            </div>
-        </div>
-
+      <div class="cards three reviews">
+        <article class="review-card"><div class="stars">★★★★★</div><p>“Victor helped me improve my speaking confidence. I can now communicate much better in English.”</p><strong>– Anna</strong></article>
+        <article class="review-card"><div class="stars">★★★★★</div><p>“The lessons are practical and easy to understand.”</p><strong>– Monika</strong></article>
+        <article class="review-card"><div class="stars">★★★★★</div><p>“My English improved significantly after a few lessons.”</p><strong>– Gregory</strong></article>
+      </div>
     </div>
-</section>
+  </section>
 
-<section class="testimonials">
-    <p class="section-label">WHAT STUDENTS SAY</p>
-    <h2>Trusted by Learners</h2>
+  <section class="section-padding stats-section">
+    <div class="container center">
+      <h2>Trusted by Students Across Poland</h2>
+      <p class="section-subtitle">Helping learners improve their confidence, grammar and speaking skills.</p>
 
-    <div class="testimonial-grid">
-        <div class="testimonial-card">
-            <p>⭐⭐⭐⭐⭐</p>
-            <blockquote>The Polish explanations help me understand English grammar so much better.</blockquote>
-            <strong>Katarzyna</strong>
-            <small>Student</small>
-        </div>
-
-        <div class="testimonial-card">
-            <p>⭐⭐⭐⭐⭐</p>
-            <blockquote>The audio lessons are amazing. I can learn anytime, even when I'm busy.</blockquote>
-            <strong>Magdalena</strong>
-            <small>Student</small>
-        </div>
-
-        <div class="testimonial-card">
-            <p>⭐⭐⭐⭐⭐</p>
-            <blockquote>I feel more confident speaking English now. Highly recommended.</blockquote>
-            <strong>Piotr</strong>
-            <small>Student</small>
-        </div>
+      <div class="stat-grid">
+        <div class="stat-card"><strong>50+</strong><span>Students Taught</span></div>
+        <div class="stat-card"><strong>100+</strong><span>Lessons Delivered</span></div>
+        <div class="stat-card"><strong>95%</strong><span>Student Satisfaction</span></div>
+        <div class="stat-card"><strong>3+</strong><span>Years Experience</span></div>
+      </div>
     </div>
-</section>
+  </section>
 
-<section class="stats">
-    <div><strong>100+</strong><span>Happy Students</span></div>
-    <div><strong>300+</strong><span>Lessons Delivered</span></div>
-    <div><strong>50+</strong><span>Audio Lessons</span></div>
-    <div><strong>4.9/5</strong><span>Student Rating</span></div>
-</section>
-
-<section id="contact" class="cta">
-    <div>
+  <section id="contact" class="cta-wrap">
+    <div class="container">
+      <div class="cta">
         <h2>Ready to Improve Your English?</h2>
-        <p>Book a lesson today and start your journey to confident communication.</p>
+        <p>Book your first lesson today and start speaking with confidence.</p>
+        <a href="mailto:bekeeemeka33@gmail.com">Book a Lesson</a>
+      </div>
     </div>
-
-    <a href="mailto:learnwithvictor.english@gmail.com" class="primary-btn">
-        Book a Lesson Now →
-    </a>
-</section>
-
+  </section>
 </main>
 
-<footer>
+<footer class="footer">
+  <div class="container footer-grid">
     <div>
-        <img src="images/logo.png" alt="Learn with Victor Logo">
-        <p>Helping you learn English with Polish support and real-life practice.</p>
+      <div class="footer-brand">
+        <img src="images/logo.png" alt="Learn With Victor logo">
+        <strong>LearnWithVictor</strong>
+      </div>
+      <p>Helping students build confidence in English through practical and engaging lessons.</p>
+      <small>© 2026 LearnWithVictor. All rights reserved.</small>
     </div>
 
     <div>
-        <h4>Quick Links</h4>
-        <a href="#home">Home</a>
-        <a href="#lessons">Lessons</a>
-        <a href="#trial">Trial Lesson</a>
-        <a href="#contact">Contact</a>
+      <h4>Navigation</h4>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#lesson">Lessons</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
     </div>
 
     <div>
-        <h4>Lessons</h4>
-        <p>Speaking</p>
-        <p>Grammar</p>
-        <p>Vocabulary</p>
-        <p>Listening</p>
+      <h4>Services</h4>
+      <p>Private Lessons</p>
+      <p>Online Classes</p>
+      <p>Grammar Coaching</p>
+      <p>Speaking Practice</p>
+      <p>Business English</p>
     </div>
 
     <div>
-        <h4>Contact</h4>
-        <p>learnwithvictor.english@gmail.com</p>
-        <p>Facebook • Instagram • WhatsApp</p>
+      <h4>Contact</h4>
+      <p>Rzeszów, Poland</p>
+      <p>bekeeemeka33@gmail.com</p>
+      <p>WhatsApp: +48 723 463 805</p>
     </div>
+  </div>
 </footer>
 
 <script src="script.js"></script>
