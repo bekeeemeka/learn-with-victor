@@ -30,3 +30,20 @@ window.addEventListener("scroll", () => {
     header.classList.remove("scrolled");
   }
 });
+const revealElements = document.querySelectorAll(
+  ".info-card, .lesson-card, .review-card, .faq-item, .cta, .about-grid"
+);
+
+revealElements.forEach((element) => {
+  element.classList.add("reveal");
+});
+
+window.addEventListener("scroll", () => {
+  revealElements.forEach((element) => {
+    const elementTop = element.getBoundingClientRect().top;
+
+    if (elementTop < window.innerHeight - 100) {
+      element.classList.add("active");
+    }
+  });
+});
