@@ -1,0 +1,1 @@
+.reveal{opacity:0;transform:translateY(35px);transition:.8s ease}.reveal.active{opacity:1;transform:translateY(0)}.hero-image{animation:floatImage 4s ease-in-out infinite}@keyframes floatImage{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
