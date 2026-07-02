@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><link rel="icon" type="image/png" href="images/favicon.png">
-<meta property="og:title" content="Learn With Victor">
-<meta property="og:description" content="Professional English lessons with Polish support.">
-<meta property="og:image" content="images/logo.png">
-<meta property="og:type" content="website">
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Learn With Victor | English Lessons in Poland</title>
   <meta name="description" content="Professional English lessons in Poland with Polish support. Improve speaking, grammar, listening and confidence through practical lessons.">
+
+  <link rel="icon" type="image/png" href="images/favicon.png">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,7 +27,7 @@
       </div>
     </a>
 
-    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu">
+    <button class="menu-toggle" id="menuToggle">
       <i class="fa-solid fa-bars"></i>
     </button>
 
@@ -42,9 +40,7 @@
       <a href="#contact">Contact</a>
     </nav>
 
-    <a class="nav-cta" href="mailto:bekeeemeka33@gmail.com">
-      Book a Lesson
-    </a>
+    <a class="nav-cta" href="mailto:bekeeemeka33@gmail.com">Book a Lesson</a>
   </div>
 </header>
 
@@ -54,9 +50,7 @@
   <div class="container hero-grid">
     <div class="hero-content">
       <span class="eyebrow">English lessons for Polish speakers</span>
-
       <h1>Master English<br>With Confidence</h1>
-
       <p class="hero-text">
         Practical English lessons with clear Polish support, audio learning,
         speaking practice and simple explanations.
@@ -131,9 +125,9 @@
       </p>
 
       <div class="mini-stats">
-        <div><strong>50+</strong><span>Students Taught</span></div>
-        <div><strong>100+</strong><span>Lessons Delivered</span></div>
-        <div><strong>95%</strong><span>Satisfaction</span></div>
+        <div><strong class="counter" data-target="50">0</strong><span>Students Taught</span></div>
+        <div><strong class="counter" data-target="100">0</strong><span>Lessons Delivered</span></div>
+        <div><strong class="counter" data-target="95">0</strong><span>Satisfaction</span></div>
       </div>
     </div>
   </div>
@@ -198,9 +192,23 @@
     <p class="section-subtitle">Helping students speak English with confidence.</p>
 
     <div class="cards three">
-      <article class="review-card"><div class="stars">★★★★★</div><p>“Victor helped me improve my speaking confidence. I can now communicate much better in English.”</p><strong>– Anna</strong></article>
-      <article class="review-card"><div class="stars">★★★★★</div><p>“The lessons are practical and easy to understand.”</p><strong>– Monika</strong></article>
-      <article class="review-card"><div class="stars">★★★★★</div><p>“My English improved significantly after a few lessons.”</p><strong>– Gregory</strong></article>
+      <article class="review-card">
+        <div class="stars">★★★★★</div>
+        <p>“Victor helped me improve my speaking confidence. I can now communicate much better in English.”</p>
+        <strong>– Anna</strong>
+      </article>
+
+      <article class="review-card">
+        <div class="stars">★★★★★</div>
+        <p>“The lessons are practical and easy to understand.”</p>
+        <strong>– Monika</strong>
+      </article>
+
+      <article class="review-card">
+        <div class="stars">★★★★★</div>
+        <p>“My English improved significantly after a few lessons.”</p>
+        <strong>– Gregory</strong>
+      </article>
     </div>
   </div>
 </section>
@@ -222,6 +230,41 @@
   </div>
 </section>
 
+<section class="contact-section section-padding">
+  <div class="container contact-grid">
+    <div class="contact-info">
+      <span class="section-kicker">Get In Touch</span>
+      <h2>Book Your First English Lesson</h2>
+      <p>
+        Ready to improve your English? Fill out the form and I will personally get back to you.
+      </p>
+
+      <div class="contact-feature">✅ Private 1-on-1 Lessons</div>
+      <div class="contact-feature">✅ Beginner to Advanced</div>
+      <div class="contact-feature">✅ Polish Support Available</div>
+      <div class="contact-feature">✅ Online & In-person Lessons</div>
+    </div>
+
+    <form class="contact-form" id="contactForm">
+      <input type="text" id="contactName" placeholder="Your Name" required>
+      <input type="email" id="contactEmail" placeholder="Your Email" required>
+
+      <select id="contactLevel" required>
+        <option value="">Select English Level</option>
+        <option>Beginner</option>
+        <option>Elementary</option>
+        <option>Intermediate</option>
+        <option>Upper Intermediate</option>
+        <option>Advanced</option>
+      </select>
+
+      <textarea id="contactMessage" rows="6" placeholder="Tell me about your English goals..." required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+
 <section id="contact" class="cta-wrap">
   <div class="container">
     <div class="cta">
@@ -234,7 +277,7 @@
 
 </main>
 
-<a class="whatsapp-float" href="https://wa.me/48723463805" target="_blank" aria-label="Contact Victor on WhatsApp">
+<a class="whatsapp-float" href="https://wa.me/48723463805" target="_blank">
   <i class="fa-brands fa-whatsapp"></i>
 </a>
 
