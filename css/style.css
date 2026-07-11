@@ -587,6 +587,13 @@ audio {
   gap: 25px
 }
 
+.pricing-grid.two-col {
+  grid-template-columns: repeat(2, minmax(0, 360px));
+  max-width: 780px;
+  margin: 0 auto;
+  justify-content: center
+}
+
 .pricing-card {
   padding: 32px
 }
@@ -1004,6 +1011,31 @@ audio {
 .lock-preview-stats span {
   color: var(--muted);
   font-size: 12px;
+  font-weight: 700;
+}
+
+.lock-gate-buy {
+  margin-top: 26px;
+  padding-top: 22px;
+  border-top: 1px solid var(--border);
+  text-align: center;
+}
+
+.lock-gate-buy p {
+  color: var(--muted);
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.lock-gate-buy .btn {
+  width: 100%;
+}
+
+.lock-gate-buy-link {
+  display: inline-block;
+  margin-top: 12px;
+  font-size: 13.5px;
+  color: var(--blue);
   font-weight: 700;
 }
 
