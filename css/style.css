@@ -909,3 +909,134 @@ audio {
     transform:translateY(-8px);
     box-shadow:0 22px 55px rgba(23,46,124,.15);
 }
+
+/* ===== Locked lesson library ===== */
+
+.locked-course {
+  background: var(--bg);
+}
+
+.lock-gate {
+  max-width: 480px;
+  margin: 0 auto;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+  padding: 40px 32px;
+  text-align: center;
+}
+
+.lock-gate-icon {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.lock-gate h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.lock-gate p {
+  color: var(--muted);
+  margin-bottom: 22px;
+}
+
+.unlock-form {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.unlock-form input {
+  flex: 1;
+  min-width: 180px;
+  padding: 14px 16px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  font-family: inherit;
+  font-size: 15px;
+  outline: none;
+}
+
+.unlock-form input:focus {
+  border-color: var(--blue);
+}
+
+.unlock-form button {
+  border: none;
+  background: var(--blue);
+  color: white;
+  padding: 14px 22px;
+  border-radius: 12px;
+  font-weight: 800;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.unlock-error {
+  margin-top: 14px;
+  color: #b42318;
+  font-weight: 600;
+  font-size: 14.5px;
+}
+
+.lock-preview-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 26px;
+}
+
+.lock-preview-stats div {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 14px 8px;
+}
+
+.lock-preview-stats strong {
+  display: block;
+  font-size: 22px;
+  color: var(--blue);
+}
+
+.lock-preview-stats span {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.full-course {
+  margin-top: 20px;
+}
+
+.level-block {
+  margin-bottom: 50px;
+}
+
+.level-title {
+  font-size: 24px;
+  margin-bottom: 22px;
+  color: var(--navy);
+}
+
+.level-count {
+  font-size: 14px;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.locked-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.locked-grid .lesson-card h3 {
+  font-size: 20px;
+  margin: 24px 0 10px;
+}
+
+.locked-grid .lesson-card p {
+  margin: 0;
+  font-size: 15px;
+}
