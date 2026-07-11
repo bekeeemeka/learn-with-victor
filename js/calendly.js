@@ -1,5 +1,4 @@
-// TODO: replace with your real Calendly link once created (Calendly > Event Types > Copy Link)
-const CALENDLY_URL = "https://calendly.com/YOUR-LINK-HERE";
+const CALENDLY_URL = "https://calendly.com/bekeeemeka/30min";
 
 document.querySelectorAll(".btn-calendly").forEach((btn) => {
   btn.addEventListener("click", (e) => {
