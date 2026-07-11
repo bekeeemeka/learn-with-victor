@@ -5,11 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pricing | Learn With Victor</title>
   <meta name="description" content="English lesson pricing and packages for Learn With Victor.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Pricing | Learn With Victor">
+  <meta property="og:description" content="English lesson pricing and packages for Learn With Victor.">
+  <meta property="og:image" content="images/victor.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Pricing | Learn With Victor">
+  <meta name="twitter:description" content="English lesson pricing and packages for Learn With Victor.">
+  <meta name="twitter:image" content="images/victor.jpg">
   <link rel="icon" type="image/png" href="images/favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/animations.css">
   <link rel="stylesheet" href="css/responsive.css">
@@ -27,17 +36,17 @@
     </a>
 
     <nav class="nav-menu" id="navMenu">
-        <a href="index.html" class="">Home</a>
-        <a href="about.html" class="">About</a>
-        <a href="lessons.html" class="">Lessons</a>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="lessons.html">Lessons</a>
         <a href="pricing.html" class="active">Pricing</a>
-        <a href="faq.html" class="">FAQ</a>
-        <a href="contact.html" class="">Contact</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
     </nav>
 
-    <a href="contact.html" class="nav-cta">Book a Lesson</a>
+    <a href="#" class="nav-cta btn-calendly">Book a Lesson</a>
 
-    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
       <i class="fa-solid fa-bars"></i>
     </button>
   </div>
@@ -59,7 +68,7 @@
         <strong>Free</strong>
         <p>Short introduction lesson and level check.</p>
         <ul><li>Speaking check</li><li>Learning advice</li><li>Plan recommendation</li></ul>
-        <a href="contact.html" class="btn primary">Book Trial</a>
+        <a href="#" class="btn primary btn-calendly">Book Trial</a>
       </article>
 
       <article class="pricing-card featured reveal">
@@ -67,7 +76,7 @@
         <strong>70 PLN</strong>
         <p>One hour private English lesson.</p>
         <ul><li>1 hour lesson</li><li>Speaking practice</li><li>Grammar support</li><li>Polish explanation</li></ul>
-        <a href="contact.html" class="btn primary">Book Lesson</a>
+        <a href="#" class="btn primary btn-calendly">Book Lesson</a>
       </article>
 
       <article class="pricing-card reveal">
@@ -75,7 +84,7 @@
         <strong>650 PLN</strong>
         <p>Best for consistent progress.</p>
         <ul><li>10 private lessons</li><li>Personal learning plan</li><li>Homework support</li><li>Progress tracking</li></ul>
-        <a href="contact.html" class="btn primary">Start Package</a>
+        <a href="#" class="btn primary btn-calendly">Start Package</a>
       </article>
     </div>
   </section>
@@ -128,5 +137,7 @@
 <script src="js/animations.js"></script>
 <script src="js/contact.js"></script>
 
+<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<script src="js/calendly.js" defer></script>
 </body>
 </html>
