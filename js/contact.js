@@ -1,5 +1,4 @@
-// TODO: get a free access key at https://web3forms.com (just needs your email, no account signup)
-const WEB3FORMS_ACCESS_KEY = "YOUR-ACCESS-KEY-HERE";
+const WEB3FORMS_ACCESS_KEY = "5ef0cbf0-f07c-436e-b813-1043934c00c5";
 
 const contactForm = document.querySelector("#contactForm");
 
